@@ -24,4 +24,4 @@ Syntax highlighted code block
 
 [SMART4412TKU 로 오목](https://github.com/Seungkyu8/Smart4412-IoT-program)
 
-기존에 있던 위 프로젝트들을 활용해 "8*8 Dot Matrix에 그림 그리기" 를 구현하는 것을 프로젝트 주제로 정했습니다.
+기존에 있던 위 프로젝트들을 활용해 "8*8 Dot Matrix에 그림 그리기" 를 구현하는 것을 프로젝트 주제로 정했습니다
