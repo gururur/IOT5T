@@ -1,0 +1,81 @@
+Snake.cpp에서
+
+// 열거형 enum은 열거 위치에 따라 정수값이 자동으로 할당됨
+https://boycoding.tistory.com/179
+
+typedef enum : int
+{
+    UP,      //0
+    DOWN, //1
+    LEFT,    //2
+    RIGHT,  //3
+    OK       //4
+} UDLR;
+
+...
+
+ //향하는 방향으로 움직임.
+    bool go(int heading)
+    {
+        coord ret = currentYX;
+        switch (heading)
+        {
+        case UP:
+            ret.y -= 1;
+            break;
+
+        case DOWN:
+            ret.y += 1;
+            break;
+
+        case LEFT:
+            ret.x += 1;
+            break;
+
+        case RIGHT:
+            ret.x -= 1;
+            break;
+
+        default:
+            break;
+        }
+
+----------------------------
+
+TactSW.cpp 에서 
+
+int tactswFd = -1
+        tactswFd = open(tactswDev, O_RDONLY);
+        read(tactswFd, &b, sizeof(b));
+        read(tactswFd, &b, sizeof(b));
+        close(tactswFd);
+        switch (b)
+        {
+        case 2:
+            return 0;  //UP
+        case 4:
+            return 2;  //LEFT
+        case 5:
+            return 4;  //OK
+        case 6:
+            return 3;  //RIGHT
+        case 8:
+            return 1;  //DOWN
+
+        default:
+            return -1;
+        }
+
+// 교재 PDF 319쪽 참고
+//tact switch에서 int tactswFd = open(tactswDev, O_RDONLY) 가  tact switch 12개를 조작하는 코드
+
+H_SMART4412 기준으로
+
+1   2   3
+4   5   6
+7   8   9
+10 11 12
+
+로 인식이 됨
+
+따라서 위 코드를 활용해서 조작키를 만드는 건 쉬워보임
