@@ -14,11 +14,11 @@ LCD에 행과 열에 대한 힌트 표시하기
 
 ## 택트 스위치를 방향키처럼 사용하고 도트 매트릭스 키기를 위해 구현한 코드
 
-[Cursor.cpp] (https://github.com/gururur/IOT5T/blob/gh-pages/logicGame/Cursor.cpp)
+[Cursor.cpp](https://github.com/gururur/IOT5T/blob/gh-pages/logicGame/Cursor.cpp)
 
-[DotMatrixPaper.cpp] (https://github.com/gururur/IOT5T/blob/gh-pages/logicGame/DotMatrixPaper.cpp)
+[DotMatrixPaper.cpp](https://github.com/gururur/IOT5T/blob/gh-pages/logicGame/DotMatrixPaper.cpp)
 
-[TactSw.cpp] (https://github.com/gururur/IOT5T/blob/gh-pages/logicGame/TactSW.cpp)
+[TactSw.cpp](https://github.com/gururur/IOT5T/blob/gh-pages/logicGame/TactSW.cpp)
 
 
 
@@ -66,5 +66,5 @@ cursor.cpp에서 enum을 활용하여 정의한 상하좌우의 값들로 return
 
 ## 참고 :
 
-[뱀 게임]https://github.com/jinwoo1225/SnakeGameWithSmart4412
+[뱀 게임](https://github.com/jinwoo1225/SnakeGameWithSmart4412)
 
