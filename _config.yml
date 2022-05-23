@@ -1,16 +1,1 @@
 theme: jekyll-theme-modernist
-
-https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=icfactory&logNo=221303765149
-
-
-커서 움직이는데 참고
-커서 x y = 5  5 씩 주고 상하좌우 움직일때마다 +- 1씩 대각선까지 구현하는것도 마찬가지
-다만 x y 값에 최대최소값 설정, 대충 인덱스 좌표값으로 한다하면 
-if x > 7 
-x = 7
-if x<0
-x=0
-
-이런 조건문들을 설정한 뒤 이후 8*8 도트 매트릭스에 출력
-
-
