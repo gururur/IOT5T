@@ -23,6 +23,7 @@ LCD에 행과 열에 대한 힌트 표시하기
 
 
 ## Cursor.cpp
+
 방향키에 따라 이동하는 커서의 위치를 확인하고 테라텀에 표시합니다.
 
 coord 구조체를 사용하여 콘솔 화면 버퍼에서 커서의 위치를 정의 합니다.
@@ -56,6 +57,7 @@ matrixPaper 행렬의 값들을 읽어서 도트 매트릭스에 출력합니다
 ![6](https://user-images.githubusercontent.com/64446278/169743552-e2d1ca85-9ee5-49ad-9775-91ff5eee811a.PNG)
 
 ## TactSW.cpp
+
 택트 스위치들의 기능들을 정의 합니다.
 
 cursor.cpp에서 enum을 활용하여 정의한 상하좌우의 값들로 return 값을 정의 합니다.
