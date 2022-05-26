@@ -58,15 +58,15 @@ int main(){
 			case 5: //Ok
 			
 			if(map[x][y]=1){
-				map[x][y] = 0; //ok µÎ¹ø ´©¸¥ °æ¿ì »èÁ¦½ÃÅ°±â 
+				map[x][y] = 0; //ok ë‘ë²ˆ ëˆ„ë¥¸ ê²½ìš° ì‚­ì œì‹œí‚¤ê¸° 
 			}else{
 				map[x][y] = 1;
 			}
 			
 			light(map,1);
 			
-			case 9: //Á¤´ä È®ÀÎ ¹öÆ° 
-        	//check() ÇÔ¼ö
+			case 9: //ì •ë‹µ í™•ì¸ ë²„íŠ¼ 
+        	//check() í•¨ìˆ˜
 			break;
 		}
 	}
@@ -78,7 +78,7 @@ void light(unsigned char matrix[8][8], int id){
 	unsigned char value = 1;
 	unsigned char temp = 0;
 	
-	// 2Â÷¿ø¹è¿­À» 1Â÷¿ø¹è¿­·Î ¹Ù²ãÁÖ´Â ÇÔ¼ö 
+	// 2ì°¨ì›ë°°ì—´ì„ 1ì°¨ì›ë°°ì—´ë¡œ ë°”ê¿”ì£¼ëŠ” í•¨ìˆ˜ 
 	int i, j;
 	for(i=0; i<8; i++){
 		for(j=8-1; j>=0; j--){
@@ -91,11 +91,11 @@ void light(unsigned char matrix[8][8], int id){
 	}
 	 
 	write(dot, &a, sizeof(a));
-	unsleep(300000); //led °è¼Ó Á¡µîÀ¸·Î ¹Ù²Ù±â 
+	unsleep(300000); //led ê³„ì† ì ë“±ìœ¼ë¡œ ë°”ê¾¸ê¸° 
 	close(dot);
 }
 
 void check(){
-	//Á¤´ä ¹è¿­, map ¹è¿­ ºñ±³
-	// map ¹è¿­ ÃÊ±âÈ­ 
+	//ì •ë‹µ ë°°ì—´, map ë°°ì—´ ë¹„êµ
+	// map ë°°ì—´ ì´ˆê¸°í™” 
 } 
