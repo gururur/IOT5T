@@ -16,7 +16,7 @@ public:
         read(tactswFd, &b, sizeof(b));
         close(tactswFd);
 
-        // return°ªµéÀº cursor.cpp¿Í ¿¬°üµÊ
+        // returnÂ°ÂªÂµÃ©Ã€Âº cursor.cppÂ¿Ã Â¿Â¬Â°Ã¼ÂµÃŠ
         switch (b)
         {
         case 2:
