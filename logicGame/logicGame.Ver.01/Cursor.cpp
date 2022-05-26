@@ -8,7 +8,7 @@
 
 using namespace std;
 
-// coord±¸Á¶Ã¼ »ç¿ë
+// coordêµ¬ì¡°ì²´ ì‚¬ìš©
 #ifndef COORD_SET
 typedef struct coord
 {
@@ -17,7 +17,7 @@ typedef struct coord
 } coord;
 #endif
 
-//ENUMÀ» È°¿ëÇØ¼­ 0,1,2,3,4¸¦ ¼³Á¤, TactSW.cpp¿Í ¿¬°ü
+//ENUMì„ í™œìš©í•´ì„œ 0,1,2,3,4ë¥¼ ì„¤ì •, TactSW.cppì™€ ì—°ê´€
 typedef enum : int
 {
     UP,
@@ -31,10 +31,10 @@ class Cursor
 {
 private:
     
-    //Ä¿¼­ ÁÂÇ¥
+    //ì»¤ì„œ ì¢Œí‘œ
     coord currentYX;
 
-    //µð¹ö±ë¿ëÇÔ¼ö
+    //ë””ë²„ê¹…ìš©í•¨ìˆ˜
     void printArray(coord A)
     {
         bool M[8][8];
@@ -53,7 +53,7 @@ private:
         }
     }
 
-    // µµÆ® ¸ÅÆ®¸¯½º À§¸¦ ¹þ¾î³ªÁö ¸øÇÏ°Ô ÇÔ
+    // ë„íŠ¸ ë§¤íŠ¸ë¦­ìŠ¤ ìœ„ë¥¼ ë²—ì–´ë‚˜ì§€ ëª»í•˜ê²Œ í•¨
     static bool isOnSpace(coord C)
     {
         if (C.y > 7 || C.y < 0 || C.x > 7 || C.x < 0)
@@ -81,8 +81,8 @@ private:
 
 public:
 
-    //Ä¿¼­ ¹æÇâÀÌµ¿. ´Ù¸¸ snake.cpp¿¡¼­  ±×·¯´øµ¥ ½Ç½ÀÅëÇØ È®ÀÎÇØºÁ¾ß ÇÒµí ÇÔ
-    // TactSW.cpp ¿Í ¿¬°ü
+    //ì»¤ì„œ ë°©í–¥ì´ë™. ë‹¤ë§Œ snake.cppì—ì„œ  ê·¸ëŸ¬ë˜ë° ì‹¤ìŠµí†µí•´ í™•ì¸í•´ë´ì•¼ í• ë“¯ í•¨
+    // TactSW.cpp ì™€ ì—°ê´€
     bool move(int dot)
     {
         coord ret = currentYX;
@@ -109,7 +109,7 @@ public:
         }
         if (isOnSpace(ret))
         {
-            //±ÔÁ¤µÈ space³»¿¡ À§Ä¡ÇÑ´Ù¸é, ÁÂÇ¥·ÎÀÌµ¿
+            //ê·œì •ëœ spaceë‚´ì— ìœ„ì¹˜í•œë‹¤ë©´, ì¢Œí‘œë¡œì´ë™
             currentYX = ret;
 
             return true;
@@ -117,7 +117,7 @@ public:
         return false;
     }
 
-    // 8*8ÀÇ ÆÇ À§¿¡ Á¸ÀçÇÏ´Â Áö È®ÀÎÇÏ´Â ÄÚµå, logicGame.cpp¿¡¼­ »ç¿ë
+    // 8*8ì˜ íŒ ìœ„ì— ì¡´ìž¬í•˜ëŠ” ì§€ í™•ì¸í•˜ëŠ” ì½”ë“œ, logicGame.cppì—ì„œ ì‚¬ìš©
     coord get() { return currentYX;}
 
 };
