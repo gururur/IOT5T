@@ -7,22 +7,22 @@
 #define CLCD "/dev/clcd"
 using namespace std;
 
-char rhint[4][30] = {"Çà : 0 0 0 0 0 0 0 0", 
-					"Çà : 11 11 4 121 222 8 22 11", 
-					"Çà : 1 0 0 0 0 0 0 0",
-					"Çà : 0 0 0 1 0 0 0 0"};	// Çà ÈùÆ® 
+char rhint[4][30] = {"í–‰ : 0 0 0 0 0 0 0 0", 
+		     "í–‰ : 11 11 4 121 222 8 22 11", 
+		     "í–‰ : 1 0 0 0 0 0 0 0",
+		     "í–‰ : 0 0 0 1 0 0 0 0"};	// í–‰ íŒíŠ¸ 
 					
-char chint[4][30] = {"¿­: 0 0 0 0 0 0 0 0",
-					"¿­ : 2 4 33 4 4 33 4 2",
-					"¿­ : 0 0 1 0 0 0 0 0",
-					"¿­ : 0 0 1 0 0 0 0 0"};	// ¿­ ÈùÆ® 
+char chint[4][30] = {"ì—´ : 0 0 0 0 0 0 0 0",
+                     "ì—´ : 2 4 33 4 4 33 4 2",
+		     "ì—´ : 0 0 1 0 0 0 0 0",
+		     "ì—´ : 0 0 1 0 0 0 0 0"};	// ì—´ íŒíŠ¸ 
 
 class CharacterLCD
 {
 	private:
 		int clcd_fd;
 		
-		//CharacterLCD¿¡ Ãâ·Â
+		//CharacterLCDì— ì¶œë ¥
 		void print(string S)
 		{
 			char *cstr = new char[S.length()+1];
@@ -33,7 +33,7 @@ class CharacterLCD
 		 } 
 	
 	public:
-		void beforeGame()	// °ÔÀÓÀ» ½ÃÀÛÇÏ±â Àü¿¡ Ãâ·Â 
+		void beforeGame()	// ê²Œì„ì„ ì‹œì‘í•˜ê¸° ì „ì— ì¶œë ¥ 
 		{
 			string s1 = "	Nemo Logic	";
 			string s2 = "	Press Start	";
@@ -47,7 +47,7 @@ class CharacterLCD
 		 
 		 void endGame(int score)
 		 {
-		 	string s1 = "Á¡¼ö : " + score;
+		 	string s1 = "ì ìˆ˜ : " + score;
 		 	print(s1);
 		 }
 		
