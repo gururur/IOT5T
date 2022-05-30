@@ -16,7 +16,7 @@ public:
         read(tactswFd, &b, sizeof(b));
         close(tactswFd);
 
-        // return°ªµéÀº cursor.cpp¿Í ¿¬°üµÊ
+        // returnÂ°ÂªÂµÃ©Ã€Âº cursor.cppÂ¿Ã Â¿Â¬Â°Ã¼ÂµÃŠ
         switch (b)
         {
         case 2:
@@ -30,9 +30,9 @@ public:
         case 8:
             return 1; //DOWN
         case 9:
-			return 5; //SUBMIT 
-		case 1:
-			return 6; //START
+	    return 5; //SUBMIT 
+	case 1:
+	    return 6; //START
 
         default:
             return -1;
