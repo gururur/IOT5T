@@ -1,0 +1,9 @@
+CC := /usr/local/CodeSourcery/Sourcery_G++_Lite/bin/arm-none-eavi-gcc
+obj-m := hello.o
+KDIR := /kernel/kernel_4412
+
+all:
+	make -C $(KDIR) SUBDIRS=$(PWD)
+clean:
+	rm -rf *.o *.ko
+	rm -f $(TEST_TARGET)
