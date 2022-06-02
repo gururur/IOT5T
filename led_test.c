@@ -96,7 +96,7 @@ int main(){
  dev = open(led_dev, O_RDWR);
  if (dev < 0){
  fprintf(stderr, "cannot open LED Device (%d)", dev);
- exit(2);
+  exit(2);
  }
  led_up_shift(&dev);
  led_all(&dev);
@@ -110,7 +110,7 @@ int main(){
  if(key == UP_) led_up_shift( &dev);
  else if (key== DOWN_) led_down_shift(&dev);
  else if (key == ALL_) led_all(&dev);
-
+  
 //////////////
  else if (key == FLASHING_) led_flashing(&dev);
 /////////////
