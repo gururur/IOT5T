@@ -25,7 +25,7 @@ int print_menu(void){
  printf("* 3. ALL *\n");
 
 /////// 
- print("* 4. FLASHING *\n" );
+ printf("* 4. FLASHING *\n" );
 ///////
 
  printf("* 0. EXIT *\n");
