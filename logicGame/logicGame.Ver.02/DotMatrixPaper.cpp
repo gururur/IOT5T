@@ -7,7 +7,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <cstdlib>
-#include "CharacterLCD.cpp"	// clcd ÄÚµå Ãß°¡ 
+#include "CharacterLCD.cpp"	// clcd ì½”ë“œ ì¶”ê°€ 
 
 #define DOT_DEV "/dev/dot"
 #define COORD_SET
@@ -54,7 +54,7 @@ bool ans[4][8][8] ={
 	        {0, 0, 0, 0, 0, 0, 0, 0}
 	    }
 	};
-typedef struct coord  //coord ±¸Á¶Ã¼´Â x,y À§Ä¡¸¦ °¡Áö´Â ±¸Á¶Ã¼
+typedef struct coord  //coord êµ¬ì¡°ì²´ëŠ” x,y ìœ„ì¹˜ë¥¼ ê°€ì§€ëŠ” êµ¬ì¡°ì²´
 {
     int y;
     int x;
@@ -73,16 +73,17 @@ public:
     DotMatrixPaper()
     {
         dot_fd = -1;
-        memset(matrixPaper, 0, sizeof(bool) * 8 * 8); // matrix Çà·Ä ¸ðµç °ªÀ» 0À¸·Î ¼¼ÆÃ
+        memset(matrixPaper, 0, sizeof(bool) * 8 * 8); // matrix í–‰ë ¬ ëª¨ë“  ê°’ì„ 0ìœ¼ë¡œ ì„¸íŒ…
     }
     ~DotMatrixPaper() { close(dot_fd); }
 
-    // ¸ðµç ¸ÅÆ®¸¯½º ÃÊ±âÈ­
+    // ëª¨ë“  ë§¤íŠ¸ë¦­ìŠ¤ ì´ˆê¸°í™”
     void clear() { memset(matrixPaper, 0, sizeof(bool) * 8 * 8); }
-    // tact switch 5¹ø ¹öÆ°À» ´©¸¦ ¶§¸¶´Ù ´å ¸ÅÆ®¸¯ led¸¦ ÄÑ°í ²ô°Ô ÇÔ
-    void set(coord C) { matrixPaper[C.y][C.x] = !matrixPaper[C.y][C.x]; }
+    // tact switch 5ë²ˆ ë²„íŠ¼ì„ ëˆ„ë¥¼ ë•Œë§ˆë‹¤ ë‹· ë§¤íŠ¸ë¦­ ledë¥¼ ì¼œê³  ë„ê²Œ í•¨
+    void set(coord C) { matrixPaper[C.y][C.x] = true; }
+    // void set(coord C) { matrixPaper[C.y][C.x] = !matrixPaper[C.y][C.x]; }
 
-    // ½Ã¸®¾ó·Î Ãâ·Â -> µð¹ö±ë¿ë
+    // ì‹œë¦¬ì–¼ë¡œ ì¶œë ¥ -> ë””ë²„ê¹…ìš©
     void printToSerial()
     {
         for (int i = 0; i < 8; i++)
@@ -95,7 +96,7 @@ public:
         }
     }
 
-    // ¸ÅÆ®¸¯½º·Î Ãâ·Â
+    // ë§¤íŠ¸ë¦­ìŠ¤ë¡œ ì¶œë ¥
     void drawToMatrix(int microSec)
     {
         openDot();
@@ -116,7 +117,7 @@ public:
         closeDot();
     }
     
-    //Á¤´äÇà·Ä°ú ºñ±³, Á¡¼öÈ®ÀÎ 
+    //ì •ë‹µí–‰ë ¬ê³¼ ë¹„êµ, ì ìˆ˜í™•ì¸ 
 	void  checkTheans(int rnd){
 		for (int i=0; i<8; i++){
 			for(int j=0; j<8; j++){
