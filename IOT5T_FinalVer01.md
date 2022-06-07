@@ -6,6 +6,8 @@
 
 사진 변경 및 추가 필요한거 요청
 
+참고 프로젝트 등 참고한거 있으면 링크 달고 여기서 어느어느 부분을 참고했다 식의 설명 추가 필요
+
 
 
 ## 사용 장치
@@ -132,3 +134,13 @@ coord 구조체 변수 ret의 좌표를 0,0으로 잡아주고 rnd의 값을 랜
 clearCusor(), cursor()를 반복하여 커서가 지나간 자리는 초기화하고 커서가 위치한 좌표만 true값을 지닙니다.
 
 drawToPaper()와 drawToCursor()를 통해 조작된 paper 매트릭스값과 커서 위치가 표시된 커서 매트릭스 읽어 8x8 닷 매트릭스 상에 출력합니다.
+
+### 참고
+
+[SMART4412TKU 로 가위바위보 베팅](https://syki66.github.io/blog/2020/06/15/H-smart4412TKU.html)
+
+[SMART4412TKU 로 오목](https://github.com/Seungkyu8/Smart4412-IoT-program)
+
+[로직큐브 하는 법](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=logic_puzzle&logNo=130074665885)
+
+[뱀 게임](https://github.com/jinwoo1225/SnakeGameWithSmart4412)
