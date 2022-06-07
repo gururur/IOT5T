@@ -97,9 +97,9 @@ coord 구조체 변수 ret의 좌표를 0,0으로 잡아주고 rnd의 값을 랜
 
 
 
-## 실제 닷 매트릭스상 출력
 ## tact switch 조작
-![스크린샷(1256)](https://user-images.githubusercontent.com/64446278/172452653-36842e38-3247-434a-a2df-fe0c28f3bbf7.png)
+
+![스크린샷(1258)](https://user-images.githubusercontent.com/64446278/172452969-ba29e2ae-4826-4e29-b13c-8f9ff4e6f215.png)
 
 택트 스위치는 좌상단에서 우하단으로 1~12의 값을 가집니다. 
 
@@ -124,9 +124,11 @@ coord 구조체 변수 ret의 좌표를 0,0으로 잡아주고 rnd의 값을 랜
 12번 버튼은 ret 좌표값과 같은 페이퍼 매트릭스의 좌표값을 false로 변경합니다. 즉 그림을 지우는 역할입니다.
 
 
-![스크린샷(1258)](https://user-images.githubusercontent.com/64446278/172452969-ba29e2ae-4826-4e29-b13c-8f9ff4e6f215.png)
 
+## 실제 닷 매트릭스상 출력
 
 ![스크린샷(1259)](https://user-images.githubusercontent.com/64446278/172453364-8801f5f7-04b6-4828-b821-02e77b155aba.png)
 
+clearCusor(), cursor()를 반복하여 커서가 지나간 자리는 초기화하고 커서가 위치한 좌표만 true값을 지닙니다.
 
+drawToPaper()와 drawToCursor()를 통해 조작된 paper 매트릭스값과 커서 위치가 표시된 커서 매트릭스 읽어 8x8 닷 매트릭스 상에 출력합니다.
