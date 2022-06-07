@@ -12,7 +12,7 @@
 
 ![스크린샷(1244)](https://user-images.githubusercontent.com/64446278/172448194-0cf159f3-f887-4837-ba34-76cc350c047b.png)
 
-logicGame을 구현하는데 있어 택트 스위치, CLCD, LED, 8*8 Dot Matrix를 사용했습니다.
+logicGame을 구현하는데 있어 택트 스위치, CLCD, LED, 8x8 Dot Matrix를 사용했습니다.
 
 
 
@@ -44,31 +44,33 @@ x,y 매개변수값을 지니는 coord 구조체를 사용합니다. 커서의 �
 
 ![스크린샷(1249)](https://user-images.githubusercontent.com/64446278/172450189-f60365a8-7c65-470c-8950-9f85d567de88.png)
 
+8x8 매트릭스 상의 led를 조작합니다.
+
+
+
+## 닷 매트릭스 상 보이는 매트릭스
+
+![스크린샷(1248)](https://user-images.githubusercontent.com/64446278/172450461-6d50a62b-00d7-4082-89f1-0c3c777c85b2.png)
+
 기본적으로 페이퍼 매트릭스와 커서 매트릭스를 출력합니다.
 
 
 
 ## 초기화, 그리기, 지우기, 커서 위치
 
-![스크린샷(1248)](https://user-images.githubusercontent.com/64446278/172450461-6d50a62b-00d7-4082-89f1-0c3c777c85b2.png)
+![스크린샷(1250)](https://user-images.githubusercontent.com/64446278/172450752-5b5e13aa-af39-42d5-a2b8-43db4929d17a.png)
 
 페이퍼 매트릭스와 커서 매트릭스를 초기화하고, 페이퍼 매트릭스의 좌표값을 조작하고, 커서의 위치를 출력하는데 사용합니다.
 
-
-
 ## 각 매트릭스의 값 출력
-
-![스크린샷(1250)](https://user-images.githubusercontent.com/64446278/172450752-5b5e13aa-af39-42d5-a2b8-43db4929d17a.png)
-
-각 매트릭스의 좌표값들을 읽어 닷 매트릭스 상에서 출력하는데 사용합니다.
-
-
 
 ## CLCD 함수
 
 ![스크린샷(1252)](https://user-images.githubusercontent.com/64446278/172451227-33f30d17-0b70-4367-8c2b-8239afd24118.png)
 
 CLCD를 사용하기 위한 코드입니다. CLCD는 한 줄당 16자로 한번에 총 32자를 출력할 수 있습니다. 
+
+각 매트릭스의 좌표값들을 읽어 닷 매트릭스 상에서 출력하는데 사용합니다.
 
 beforGame()은 게임을 시작하기전에 출력합니다.
 
