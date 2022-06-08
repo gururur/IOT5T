@@ -150,7 +150,21 @@ drawToPaper()와 drawToCursor()를 통해 조작된 paper 매트릭스값과 커
 
 ## 실행영상
 
-[시작 전](https://youtu.be/n8fuc5eg26Y)
+[시작](https://youtu.be/n8fuc5eg26Y)
+
+[그리기](https://youtu.be/L2FWTz888yE)
+
+[지우기](https://youtu.be/KkCmFdSfDCk)
+
+[행 힌트와 열 힌트](https://youtu.be/tWcaw5AxB9Q)
+
+[힌트](https://youtu.be/zBOurf6iPig)
+
+[재시작](https://youtu.be/qLER7I76JMU)
+
+[점수와 정답](https://youtube.com/shorts/L56HNXwpThQ)
+
+
 
 ### 참고
 
