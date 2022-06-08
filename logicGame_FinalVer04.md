@@ -128,6 +128,6 @@ drawToPaper()와 drawToCursor()를 통해 조작된 paper 매트릭스값과 커
   
 [뱀 게임](https://github.com/jinwoo1225/SnakeGameWithSmart4412)
 
-  전반적인 기기 동작 코드와 coord 구조체 함수를 참고했습니다.
+  전반적인 기기 동작 코드와 coord 구조체 함수, 택트 스위치 상하좌우 이동과 닷 매트릭스 상 위치 표시를 참고했습니다.
 
 [로직큐브 하는 법](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=logic_puzzle&logNo=130074665885)
