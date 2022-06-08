@@ -168,12 +168,15 @@ drawToPaper()와 drawToCursor()를 통해 조작된 paper 매트릭스값과 커
 
 ### 참고
 
-[SMART4412TKU 로 가위바위보 베팅](https://syki66.github.io/blog/2020/06/15/H-smart4412TKU.html)
-
-[SMART4412TKU 로 오목](https://github.com/Seungkyu8/Smart4412-IoT-program)
 
 [SMART4412TKU LED 점멸하기](https://comonyo.tistory.com/6)
+  
+  led 점별 방법을 참고했습니다.
+  
+[뱀 게임](https://github.com/jinwoo1225/SnakeGameWithSmart4412)
+
+  전반적인 기기 동작 코드와 coord 구조체 함수를 참고했습니다.
 
 [로직큐브 하는 법](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=logic_puzzle&logNo=130074665885)
 
-[뱀 게임](https://github.com/jinwoo1225/SnakeGameWithSmart4412)
+
