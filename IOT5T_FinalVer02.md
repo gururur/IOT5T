@@ -146,6 +146,12 @@ clearCusor(), cursor()를 반복하여 커서가 지나간 자리는 초기화�
 
 drawToPaper()와 drawToCursor()를 통해 조작된 paper 매트릭스값과 커서 위치가 표시된 커서 매트릭스 읽어 8x8 닷 매트릭스 상에 출력합니다.
 
+
+
+## 실행영상
+
+[시작 전](https://youtu.be/n8fuc5eg26Y)
+
 ### 참고
 
 [SMART4412TKU 로 가위바위보 베팅](https://syki66.github.io/blog/2020/06/15/H-smart4412TKU.html)
