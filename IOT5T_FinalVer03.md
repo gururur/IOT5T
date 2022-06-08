@@ -1,5 +1,9 @@
 # IoT 프로그래밍 5조 프로젝트 Final
 
+5조 팀원 : 방경민, 이재현, 추지연
+
+6월 8일 프로젝트 최종 발표자 : 추지연
+
 ## 로직 큐브 게임
 ![logicCubeEX](https://user-images.githubusercontent.com/64446278/168637674-e1dbbc83-505f-49af-8bdf-7ff927f7b60d.png)
 
